@@ -1,0 +1,70 @@
+/* Всплывающий блок */
+.calendarOut{
+    background: #fff;
+    opacity: 0;
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+    transition: opacity .15s ease-out;
+    z-index: 100;
+    position: absolute;
+}
+/* Таблица календарика */
+.calendarTable {
+    border: 1px solid #909090;
+    border-collapse: collapse;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1em;
+}
+.calendarTable th,
+.calendarTable td{
+	text-align: center;
+	padding: .2em;
+	background: #fff;
+}
+/* Заголовок */
+.calendarTable th {
+    background: #d0d0d0;
+    color: #000;
+    border: 1px solid #909090;
+    font-size: .8em;
+}
+/* Заголовок праздника */
+.calendarTable th.holiday {
+    color: #f00;
+}
+/* Ячейка дня */
+.calendarTable td {
+    border: 1px solid #909090;
+    cursor: pointer;
+}
+.calendarTable td:hover{
+    background-color: rgba(45, 114, 217,.7);
+    color: #f1f1f1;
+}
+/* День без числа */
+.calendarTable td.grayed {
+    background: #f0f0f0;
+    cursor: auto !important;
+}
+/* Выбранный день */
+.calendarTable td.selected {
+    color: #f1f1f1;
+    background-color: #2d72d9;
+}
+/* Праздничный день */
+.calendarTable td.holiday {
+    color: #f00;
+}
+/* Кнопки навигации */
+.calendarTable td.navigation {
+    text-align: center;
+    border: 0px none !important;
+    font-size: 20px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+/* Кнопка текущего месяца */
+.calendarTable td.navigation_to_this_day{
+	font-size: .8em;
+}

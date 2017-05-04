@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+
+    <h1>Календарь с русскими буквами</h1>
+
+    <br>
+    <br>
+
+    <input type="text" class="calendar" placeholder="input 1">
+
+    <br>
+    <br>
+
+    <input type="text" class="calendar" placeholder="input 2">
+
+    <br>
+    <br>
+
+    <input type="text" class="calendar" placeholder="input 3">
+
+    <br>
+    <br>
+
+    <input type="text" class="calendar" placeholder="Date" value="25.06.2017">
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <input type="text" class="abcde" calendar="www" placeholder="Date">
+
+
+    <script src="calendar.min.js"></script>
+
+
+<script>
+    document.querySelector('.abcde').addEventListener('click',function (e) {
+        calendar.selectDate('3','10','1650',this.getAttribute('calendar'));
+        e.stopPropagation();
+    },false);
+</script>
+
+</body>
+</html>
